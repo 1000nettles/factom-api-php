@@ -3,6 +3,8 @@ factom-api-php
 
 A Simple PHP Wrapper for any Factom API v2 calls (including calls to *factomd* and *factom-walletd*)
 
+Find the Factom API reference documentation here: https://docs.factom.com/api
+
 Installation
 ------------
 
@@ -40,6 +42,15 @@ If you want to interact with the API securely, make sure you're running *factomd
 $url = 'https://localhost:8088/v2';
 $certLocation = '~/.factom/m2/factomdAPIpub.cert';
 $adapter = new FactomAPIAdapter($url, $certLocation);
+```
+
+If you want to interact with the API with a username and password, make sure you're running *factomd* with a username and password defined - `./factomd -rpcuser <username> -rpcpass <password>`. You can run this with a certificate as well if you wish.
+
+```php
+$url = 'https://localhost:8088/v2';
+$username = 'user';
+$password = 'password';
+$adapter = new FactomAPIAdapter($url, null, $username, $password);
 ```
 
 #### Run the API Method With Your Parameters! ####
