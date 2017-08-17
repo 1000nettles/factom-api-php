@@ -10,7 +10,7 @@ Installation
 
 Using Composer:
 
-TBD
+`composer require 1000nettles/factom-api-php`
 
 Normal Require:
 
