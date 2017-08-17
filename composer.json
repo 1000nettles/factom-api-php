@@ -1,0 +1,27 @@
+{
+    "require": {
+        "php": "^5.3.3 || ^7.0",
+        "ext-curl": "*"
+    },
+    "name": "1000nettles/factom-api-php",
+    "description": "A simple PHP wrapper for the Factom API",
+    "type": "library",
+    "homepage": "https://github.com/1000nettles/factom-api-php",
+    "license": "MIT",
+    "keywords": [
+        "factom",
+        "factomd",
+        "factom-walletd",
+        "PHP",
+        "API"
+    ],
+    "authors": [
+        {
+            "name": "1000Nettles",
+            "email": "1000nettles@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["FactomAPIAdapter.php"]
+    }
+}
